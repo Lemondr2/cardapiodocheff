@@ -1,0 +1,41 @@
+﻿CONFIGURAÇÕES E COMANDOS DO GIT
+
+CONFIGURAÇÕES INICIAIS
+
+	$ git config --global user.name “Seu nome”
+	$ git config --global user.email “Seu e-mail
+	$ git config user.name (listar os usuários)
+	$ git config user.email (listar os e-mails)
+	$ git config --list (listar as configurações)
+
+CRIANDO UM REPOSITÓRIO
+	$ git init (cria um repositório dentro da pasta especificada)
+	$ git status (reporta a situação do repositório)
+	$ git add NomeArquivo.ext (adiciona o arquivo de untracked para staged)
+	$ git commit -m “mensagem” (commita o arquivo com uma mensagem)
+	$ git commit -am “mensagem” (adiciona e commita um arquivo que já existe)
+
+VISUALIZANDO LOGS
+	$ git log (mostra o log de alterações e commits)
+	$ git log --author=”Nome” (mostra o log de alterações de determinado usuário)
+	$ git shortlog (mostra os commits e quantidades de cada usuário)
+	$ git log --graph (visualiza os commits em forma de gŕaficos) 
+	$ git show (mostra oque foi adicionado no último commit)
+	$ git show #HASH (mostra oque foi adicionado em determinado commit)
+	
+VISUALIZANDO AS ALTERAÇÕES DOS ARQUIVOS
+	$ git diff (mostra oque foi adicionado no último arquivo alterado)
+	$ git diff --name-only (mostra somente o nome do arquivo alterado)
+	
+DESFAZENDO ALTERAÇÕES
+	$ git checkout NomeArquivo (desfaz a ultima alteração)
+	$ git reset HEAD NomeArquivo (desfaz a adição do arquivo (utilizado antes do checkout))
+	$ git reset --soft #HASH (desfaz a alteração até antes do commit)
+	$ git reset --mixed #HASH (desfaz a alteração até antes do modified)
+	$ git reset --hard #HASH (desfaz a alteração e volta no arquivo)
+	
+CRIANDO UM REPOSITÓRIO REMOTO COM O GITHUB
+	$ git remote add nomearquivo git@github.com:Lemondr2/cardapiodocheff.git 
+	$ git push -u nomearquivo master (envia todos os arquivos locais para o repositório online)                    
+	$ git push nomearquivo nomebranch (envia os arquivos commitados para o remoto)
+	$ git clone caminhoespecificado (copia arquivos remoto para local)
