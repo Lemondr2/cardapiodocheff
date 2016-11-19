@@ -1,7 +1,6 @@
 ﻿CONFIGURAÇÕES E COMANDOS DO GIT
 
 CONFIGURAÇÕES INICIAIS
-
 	$ git config --global user.name “Seu nome”
 	$ git config --global user.email “Seu e-mail
 	$ git config user.name (listar os usuários)
@@ -39,3 +38,10 @@ CRIANDO UM REPOSITÓRIO REMOTO COM O GITHUB
 	$ git push -u nomearquivo master (envia todos os arquivos locais para o repositório online)                    
 	$ git push nomearquivo nomebranch (envia os arquivos commitados para o remoto)
 	$ git clone caminhoespecificado (copia arquivos remoto para local)
+
+ENTENDENDO E CRIANDO/MOVENDO/DELETANDO BRANCHES
+	Branches servem para separar o projeto. Ex: master, test, release. Descentraliza as modificações de um só local para os diversos usuários
+	$ git checkout -b 'nomebranch' (cria um novo branch e o acessa)
+	$ git branch (mostra os branchs existentes e o'*' é em qual branch o usuário está)
+	$ git branch 'nomebranch' (altera para o branch desejado)
+	$ git branch -D 'nomebranch' (deleta o branch desejado)
