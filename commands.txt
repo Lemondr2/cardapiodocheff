@@ -1,4 +1,4 @@
-﻿CONFIGURAÇÕES E COMANDOS DO GIT
+﻿CONFIGURAÇÕES E COMANDOS BÁSICOS DO GIT
 
 CONFIGURAÇÕES INICIAIS
 	$ git config --global user.name “Seu nome”
