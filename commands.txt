@@ -41,7 +41,11 @@ CRIANDO UM REPOSITÓRIO REMOTO COM O GITHUB
 
 ENTENDENDO E CRIANDO/MOVENDO/DELETANDO BRANCHES
 	Branches servem para separar o projeto. Ex: master, test, release. Descentraliza as modificações de um só local para os diversos usuários
-	$ git checkout -b 'nomebranch' (cria um novo branch e o acessa)
+	$ git checkout -b nomebranch (cria um novo branch e o acessa)
 	$ git branch (mostra os branchs existentes e o'*' é em qual branch o usuário está)
 	$ git branch 'nomebranch' (altera para o branch desejado)
 	$ git branch -D 'nomebranch' (deleta o branch desejado)
+
+MERGE/REBASE
+	$ git merge nomebranch (faz o merge dos arquivos no master, aconselhável para adição de novas features no final dos commits)
+	$ git rebase nomebranch (faz o rebase dos arquivos no master, é mais aconselhável utilizar rebase para atualizações constantes)
